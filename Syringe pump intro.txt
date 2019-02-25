@@ -1,0 +1,21 @@
+Syringe pump.
+Thank you for purchasing a syringe pump from Smoky Mountain Scientific.
+If you have questions about it, please do not hesitate to contact me at summers@wcu.edu.
+In the box, you should find:
+	Syringe pump
+	usb drive
+	usb to micro usb connection
+	12 volt power block
+	plastic syringe barrel mount adapters for different size syringes
+
+To mount a syringe in the pump, loosen the machine screws in the mount housing that hold the barrel mount and remove the barrel mount.  This will require a 2.5 mm hex driver.  Select the smallest barrel mmount adapter that accepts your chosen syringe and place it on the syringe.  Loosen the screw on the top of the plunger mount carriage (this uses a screwdriver) to allow the plunger to be inserted between the metal clip and the plastic wedge.  Mount the syringe with the barrel mount on the pump and tighten the screws.
+
+The plywood stand allows the pump to be oriented in a vertical position or horizontal position.  We prefer the vertical position (with the syringe pointing up) as it allows bubbles to be expelled easily from the syringe.
+
+To run the pump, you need to connect the 12 volt power block, through the hole in the top face of the electronics box.  You also need to connect the micro-usb port on the side of the box to your computer.  The pump will not run if the usb port is not powered.  
+There is a toggle switch on the side of the pump that allows the syringe to be easily filled and emptied without using the computer interface.  The toggle switch has three positions.  In the "up" position, the syringe pump injects from the syringe.  In the "down" position, it withdraws solution into the syringe.  In the intermediate position, it waits for commands from the host computer.
+
+The usb memory stick contains the software to run the pump.  There is a folder for a user interface that runs a single pump and a folder for a user interface that will run several pumps simultaneously.  There is also a folder that contains the source code for the pump.  Source code includes the firmware for the pump as well as the user interface.  
+
+To run the user interface, open the folder and double click on the .exe file. This should launch the user interface.  The user interface will search for the syringe pump com port when it opens up.  If the pump is not connected, there will be message beside the connect button that says "No com ports detected".  Connect the pump to a usb port and press the "connect" button to enable communications with the pump.  The user interface has text boxes that allow you to specify the volume and rate you wish to inject.  There is a yellow button that allows you to toggle between "inject" and "withdraw". To inject an accurate volume, you need to have an accurate measure of the syringe pump barrel internal diameter.  The user interface is set up with four syringe diameters programmed into a calibration file called calFile.  The calFile is a txt file found in the data folder of the program.   Clicking the "syringe" button near the bottom of the user interface allows you to toggle between the programmed syringe diameters.  You can temporarily change the diameters and names of the syringes in the calibration file by clicking in the text box and changing the text.  This information can be saved in a new calibration file, or the original calFile can be over-written using the "Write File" button.  Any new calibration file you have written can be read into the user interface using the "Read File" button.
+Under the connect button is a readout that tells you what volume of solution has been injected.  You can set the volume to zero by clicking on the yellow "Zero vol" button.  
